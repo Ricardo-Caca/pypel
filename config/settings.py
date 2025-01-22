@@ -168,5 +168,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  #EMAIL_BACKEND
 EMAIL_HOST = 'smtp.gmail.com'  # Endereço do servidor SMTP
 EMAIL_PORT = 587               # Porta do servidor SMTP
 EMAIL_USE_TLS = True           # Ative o TLS
-EMAIL_HOST_USER = 'privada.games123@gmail.com'  # Seu endereço de e-mail
-EMAIL_HOST_PASSWORD = 'NAOSEIASENHA'       # Sua senha ou app password
+EMAIL_HOST_USER = 'meuemail.com'  # Seu endereço de e-mail
+EMAIL_HOST_PASSWORD = 'minhasenha123'       # Sua senha ou app password

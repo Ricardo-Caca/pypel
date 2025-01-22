@@ -61,7 +61,7 @@
         $('#btnEsqueciSenha').click(function(event) {
             event.preventDefault();
             toastr.info('Se você esqueceu sua senha contate o administrador do sistema.');
-            window.location.href = "http://127.0.0.1:8000/novaSenha/";
+            window.location.href = "{% url 'autenticacao:novaSenha' %}";
         });
     });
 </script>
