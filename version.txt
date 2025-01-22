@@ -1,0 +1,29 @@
+pypel - sistema de gerenciamento de papelaria
+versao 0.01 - sistema de autenticacao concluido - 22/01/2025
+
+https://github.com/Ricardo-Caca/pypel
+Ricardo Antonio Nascimento de Almeida
+ricardo.antonio.caca@gmail.com
+
+1. ABNT 
+ANTONIO, Ricardo N. A. pypel - Sistema de Gerenciamento de Papelaria.
+[S.L.]: [s.n], 2025. Disponivel em: https://github.com/Ricardo-Caca/pypel
+Acesso em: [data de acesso]
+
+2. IEEE
+R. N. A. ANTONIO "pypel - Sistema de Gerenciamento de Papelaria"[online].
+Disponivel em: https://github.com/Ricardo-Caca/pypel
+[Acesso em: dia,mes,ano]
+
+3. APA
+ANTONIO, R. N. A. (2025). pypel - Sistema de Gerenciamento de Papelaria.
+Acesso em: [data de acesso], de https://github.com/Ricardo-Caca/pypel
+
+4. BibTex
+@misc{antonio2025pypel,
+    author = {Antonio, Ricardo Nascimento Almeida},
+    title = {pypel - Sistema de Gerenciamento de Papelaria}
+    year = {2025},
+    howpublished = {\url{https://github.com/Ricardo-Caca/pypel}}
+    note = {Acesso em: data de acesso}
+}
