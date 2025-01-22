@@ -3,6 +3,8 @@ from django.contrib.auth import authenticate, login as auth_login, logout as aut
 from cadastros.models import Usuario
 from django.contrib import messages
 from django.http import JsonResponse
+from autenticacao import urls
+from django.core.mail import EmailMessage
 
 def login(request):
     if request.method == 'POST':
@@ -62,3 +64,27 @@ def logout(request):
     
     return redirect('autenticacao:login')
 
+def novaSenha(request):
+    if request.method == 'POST':
+        try:
+            emaildestino = request.POST.get('txtEmail')
+            novaSenha = request.POST.get('txtSenha')
+            request.session.flush()
+            email = EmailMessage(
+            'Nova Senha Pypel',
+            'Sua nova senha é: ' + novaSenha,
+            'privada.games123@gmail.com',
+            [emaildestino]
+            )
+            #email.attach_file('/caminho/para/seu/arquivo.pdf')  # Anexe um arquivo
+            email.send()
+            messages.success(request, 'Email Enviado com Sucesso!')
+            usuario = Usuario.objects.get(email=emaildestino)
+            usuario.set_password(novaSenha)
+            usuario.save()
+            messages.success(request, 'Senha Alterada com Sucesso!')
+            return render(request, 'login.html')
+        except:
+            messages.error(request, 'ERRO 9002 - Deu ruim!')
+    return render(request, 'novaSenha.html')
+    
